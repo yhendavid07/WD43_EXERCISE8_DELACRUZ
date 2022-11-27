@@ -1,0 +1,231 @@
+html,body{
+    margin: 0;
+    background-color: black;
+}
+.banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.651);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.banner-content {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    text-align: center;
+}
+.banner-content h1 {
+    font-weight: normal!important;
+}
+button {
+    background: none;
+    border: none;
+}
+.btn-transparent {
+    border: solid white 1px;
+    padding: 10px 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    cursor: pointer;
+}
+.btn-transparent:hover {
+    background: rgba(255, 255, 255, 0.637);
+    color: black;
+    transition: 0.5s;
+}
+.aboutus {
+    max-width: 720px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    
+}
+.aboutus h1 {
+    font-weight: normal;
+    color: goldenrod;
+}
+.aboutus p{
+    color: white;   
+}
+.menu {
+    max-width: 720px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.menu h1 {
+    font-weight: normal;
+    color: goldenrod;
+}
+.menu p{
+    color: white;   
+}
+.menu-item-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.menu-item {
+    width: 50%;
+    text-align: left;  
+    align-content: center; 
+}
+.menu-item-desc {
+    padding: 20px;
+    color: white;
+}
+.menu-item-desc h1 {
+    color: goldenrod;
+}
+.menu-item2 {
+    width: 50%;
+    text-align: left;   
+}
+.menu-item-desc2 {
+    padding: 20px;
+    color: white;
+}
+.menu-item-desc2 h1 {
+    color: goldenrod;
+}
+.menu-item3 {
+    width: 50%;
+    text-align: left; 
+}
+.menu-item-desc3 {
+    padding: 20px;
+    color: white;
+}
+.menu-item-desc3 h1 {
+    color: goldenrod;
+}
+.menu-cover {
+    background: url(bg-menu.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px 0px;
+}
+.contact {
+    max-width: 720px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.contact p {
+    color: white;
+    margin-bottom: 0px;
+}
+.contact h1 {
+    color: goldenrod;
+    font-weight: normal ;
+    margin-top: 0px;
+    padding: 0px 20px;
+}
+.input-form {
+    background: none;
+    border: none;
+    border: 1px solid goldenrod;
+    width: 100%;
+    margin: 10px 0px;
+    color: white;
+    border-bottom-left-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.input-textarea {
+    background: none;
+    border: none;
+    border: 1px solid goldenrod;
+    width: 100%;
+    margin: 10px 0px;
+    color: white;
+    border-bottom-left-radius: 5px;
+    padding: 10px;
+    height: 200px;
+    /* resize: none; */
+    box-sizing: border-box;
+}
+.submit-btn {
+    background: none;
+    border: solid goldenrod 1px;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: goldenrod;
+    cursor: pointer;
+    width: 100%;
+    margin: 10px 0px;
+}
+.submit-btn:hover {
+    transition: 0.5s;
+    background: goldenrod;
+    color: white;
+}
+.footer {
+    background: goldenrod;
+    padding: 10px;
+    
+}
+.navigation-bar {
+    background: none;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 0px 10px;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links li {
+    padding:10px;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    color: white;
+}
+.nav-links li a:hover {
+    transition: 0.5s;
+    font-weight: bold;
+    
+}
+.navigation-bar h1 {
+    color: white;
+}
+@media(max-width: 720px) {
+    .menu-item {
+        width: 100%;
+    }
+    .menu-item2 {
+        width: 100%;
+    }
+    .menu-item3 {
+        width: 100%;
+    }
+    .nav-links {
+        display: none;
+    }
+    .navigation-bar {
+        top: 0;
+    }
+    .banner {
+        margin-top: 80px;
+    }
+    .aboutus, .menu, .contact {
+        padding: 15px;
+        box-sizing: border-box;
+    }
+}
